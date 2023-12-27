@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  app:
+    build: ./
+    image: corp-approval-payment
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/var/www/html
+    ports:
+      - 8010:80

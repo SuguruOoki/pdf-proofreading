@@ -3,7 +3,14 @@
 require 'vendor/autoload.php';
 
 $parser    = new \Smalot\PdfParser\Parser();
-$pdf       = $parser->parseFile('pdf/sample.pdf');
-$firstPage = $pdf->getPages()[0];
+// $pdf       = $parser->parseFile('pdf/sample.pdf');
+$pdf       = $parser->parseFile('pdf/portfolio.pdf');
+$pages = $pdf->getPages();
 
-echo nl2br($firstPage->getText());
+foreach($pages as $key => $page) {
+    $page_number = $key + 1;
+    echo "page $page_number </br>";
+    echo nl2br($page->getText());
+    echo "</br>-----</br></br>";
+}
+

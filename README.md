@@ -4,10 +4,18 @@ PDFの校正を行うためのツールを作成してみている。
 サクッと雑なものを作る想定。
 慣れているという理由でPHPを採用。
 
+## 参考
+
+https://qiita.com/nero-15/items/4f7c1ec9e354c6b0822a
+https://gomiba.co/archives/2018/03/1886/
+https://tech.yappli.io/entry/textlint-with-githubactions
+https://qiita.com/Y-Kanoh/items/9d450a6868183557042f
+https://www.thegeekstuff.com/2010/04/7z-7zip-7za-file-compression/
+
 ## TODO
 
 - [x] 最低限の環境を作る
-- [ ] PDFを読み込む
+- [x] PDFを読み込む
 - [ ] PDFを都合の良いようにパースする
 - [ ] textlintなどのライブラリを選定・導入
 - [ ] パースしたデータをこうせいする
